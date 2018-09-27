@@ -7,15 +7,15 @@
     "line": 1,
     "elements": [
       {
-        "id": "cqplus-application-test;validiate-cqplus-home-page",
+        "id": "cqplus-application-test;validiate-cqplus-home-page;;2",
         "description": "",
         "name": "Validiate CQPlus Home Page",
-        "keyword": "Scenario",
-        "line": 3,
+        "keyword": "Scenario Outline",
+        "line": 15,
         "steps": [
           {
             "result": {
-              "duration": 24297480516,
+              "duration": 11643346039,
               "status": "passed"
             },
             "name": "User Opens the Browser",
@@ -27,7 +27,7 @@
           },
           {
             "result": {
-              "duration": 11553511038,
+              "duration": 7853795971,
               "status": "passed"
             },
             "name": "User is on login page",
@@ -39,24 +39,50 @@
           },
           {
             "result": {
-              "duration": 23155852992,
+              "duration": 621760501,
               "status": "passed"
             },
-            "name": "User enter username and password",
+            "name": "User enter \"abhishek.goyal2@globallogic.com\" and \"Welcome@12\"",
             "keyword": "Then ",
             "line": 7,
             "match": {
-              "location": "HomePageStep.User_enter_username_and_password()"
+              "arguments": [
+                {
+                  "val": "abhishek.goyal2@globallogic.com",
+                  "offset": 12
+                },
+                {
+                  "val": "Welcome@12",
+                  "offset": 50
+                }
+              ],
+              "location": "HomePageStep.User_enter_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              2
+            ]
+          },
+          {
+            "result": {
+              "duration": 11014217769,
+              "status": "passed"
+            },
+            "name": "click on News and Anyalze",
+            "keyword": "Then ",
+            "line": 8,
+            "match": {
+              "location": "HomePageStep.click_on_News_and_Anyalze()"
             }
           },
           {
             "result": {
-              "duration": 14157780,
+              "duration": 6224530079,
               "status": "passed"
             },
             "name": "Close the Browser",
             "keyword": "Then ",
-            "line": 8,
+            "line": 9,
             "match": {
               "location": "HomePageStep.Close_Browser()"
             }

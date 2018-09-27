@@ -1,8 +1,15 @@
 Feature: CqPlus application Test 
 
-Scenario: Validiate CQPlus Home Page 
+Scenario Outline: Validiate CQPlus Home Page 
 
 	Given User Opens the Browser 
 	Then User is on login page 
-	Then User enter username and password 
+	Then User enter "<username>" and "<password>" 
+	Then click on News and Anyalze
 	Then Close the Browser
+	
+	
+Examples: 
+	
+	|username                       | |password  |
+	|abhishek.goyal2@globallogic.com| |Welcome@12|
