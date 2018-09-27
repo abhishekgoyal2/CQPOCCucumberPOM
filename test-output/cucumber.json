@@ -1,0 +1,70 @@
+[
+  {
+    "id": "cqplus-application-test",
+    "description": "",
+    "name": "CqPlus application Test",
+    "keyword": "Feature",
+    "line": 1,
+    "elements": [
+      {
+        "id": "cqplus-application-test;validiate-cqplus-home-page",
+        "description": "",
+        "name": "Validiate CQPlus Home Page",
+        "keyword": "Scenario",
+        "line": 3,
+        "steps": [
+          {
+            "result": {
+              "duration": 24297480516,
+              "status": "passed"
+            },
+            "name": "User Opens the Browser",
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "HomePageStep.User_Opens_the_Browser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 11553511038,
+              "status": "passed"
+            },
+            "name": "User is on login page",
+            "keyword": "Then ",
+            "line": 6,
+            "match": {
+              "location": "HomePageStep.User_is_on_login_page()"
+            }
+          },
+          {
+            "result": {
+              "duration": 23155852992,
+              "status": "passed"
+            },
+            "name": "User enter username and password",
+            "keyword": "Then ",
+            "line": 7,
+            "match": {
+              "location": "HomePageStep.User_enter_username_and_password()"
+            }
+          },
+          {
+            "result": {
+              "duration": 14157780,
+              "status": "passed"
+            },
+            "name": "Close the Browser",
+            "keyword": "Then ",
+            "line": 8,
+            "match": {
+              "location": "HomePageStep.Close_Browser()"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "C:/Users/abhishek.goyal2/workspace/CQPOCCucumberPOM/src/main/java/com/qa/features/cqplus.feature"
+  }
+]
