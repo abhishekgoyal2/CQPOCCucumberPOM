@@ -20,10 +20,11 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 public class BaseUd {
 	public static WebDriver driver;
 	public static Properties prop ;
+	public static long wait=10;
 
 	public WebDriver intializeDriver() throws IOException {
 		 prop = new Properties();
-		FileInputStream fis = new FileInputStream("D:\\CQRoll\\CQPOC\\src\\main\\java\\CQPlus\\datadriven.properties");
+		FileInputStream fis = new FileInputStream("C:\\Users\\abhishek.goyal2\\workspace\\CQPOCCucumberPOM\\src\\main\\java\\cpPlus\\config\\datadriven.properties");
 		prop.load(fis);
 		String browsername = prop.getProperty("browser");
 
@@ -57,9 +58,15 @@ public class BaseUd {
 	{
 
 		 return url = prop.getProperty("url");
-	
-		 
 	}
+	
+	
+//	public long getwait(Object wait1) throws IOException
+//	{
+//
+//		 return (long) (wait1 = prop.get("wait"));
+//	}
+	
 public void getScreenshot(String result) throws IOException
 {
 

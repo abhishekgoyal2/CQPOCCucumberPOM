@@ -13,7 +13,7 @@ public class HomePage {
 	
 	By anaylizelink =By.xpath("//a[@class='analyze-link']");
 	By Newslink = By.xpath("//a[contains (text(),'News & Analysis')]");
-	
+	By More = By.xpath("//div/a[@class='show-more-button']");
 	
 	public  WebElement getAnalyselink()
 	{
@@ -23,5 +23,10 @@ public class HomePage {
 	public  WebElement newslink()
 	{
 		return driver.findElement(Newslink);
+	}
+	
+	public  WebElement morelink()
+	{
+		return driver.findElement(More);
 	}
 }

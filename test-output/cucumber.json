@@ -11,11 +11,11 @@
         "description": "",
         "name": "Validiate CQPlus Home Page",
         "keyword": "Scenario Outline",
-        "line": 15,
+        "line": 16,
         "steps": [
           {
             "result": {
-              "duration": 11643346039,
+              "duration": 6182347852,
               "status": "passed"
             },
             "name": "User Opens the Browser",
@@ -27,7 +27,7 @@
           },
           {
             "result": {
-              "duration": 7853795971,
+              "duration": 9154280418,
               "status": "passed"
             },
             "name": "User is on login page",
@@ -39,7 +39,7 @@
           },
           {
             "result": {
-              "duration": 621760501,
+              "duration": 15381233585,
               "status": "passed"
             },
             "name": "User enter \"abhishek.goyal2@globallogic.com\" and \"Welcome@12\"",
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 11014217769,
+              "duration": 4594312794,
               "status": "passed"
             },
             "name": "click on News and Anyalze",
@@ -77,12 +77,24 @@
           },
           {
             "result": {
-              "duration": 6224530079,
+              "duration": 10167944574,
+              "status": "passed"
+            },
+            "name": "click on More link to see more news",
+            "keyword": "Then ",
+            "line": 9,
+            "match": {
+              "location": "HomePageStep.click_on_moreNews()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2099329303,
               "status": "passed"
             },
             "name": "Close the Browser",
             "keyword": "Then ",
-            "line": 9,
+            "line": 10,
             "match": {
               "location": "HomePageStep.Close_Browser()"
             }
