@@ -15,6 +15,7 @@ public class HomePage {
 	By Newslink = By.xpath("//a[contains (text(),'News & Analysis')]");
 	By More = By.xpath("//div/a[@class='show-more-button']");
 	
+	
 	public  WebElement getAnalyselink()
 	{
 		return driver.findElement(anaylizelink);
@@ -29,4 +30,6 @@ public class HomePage {
 	{
 		return driver.findElement(More);
 	}
+	
+	
 }

@@ -15,7 +15,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6182347852,
+              "duration": 5823605554,
               "status": "passed"
             },
             "name": "User Opens the Browser",
@@ -27,7 +27,7 @@
           },
           {
             "result": {
-              "duration": 9154280418,
+              "duration": 10294747188,
               "status": "passed"
             },
             "name": "User is on login page",
@@ -39,7 +39,7 @@
           },
           {
             "result": {
-              "duration": 15381233585,
+              "duration": 14903754226,
               "status": "passed"
             },
             "name": "User enter \"abhishek.goyal2@globallogic.com\" and \"Welcome@12\"",
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 4594312794,
+              "duration": 5596459908,
               "status": "passed"
             },
             "name": "click on News and Anyalze",
@@ -77,8 +77,9 @@
           },
           {
             "result": {
-              "duration": 10167944574,
-              "status": "passed"
+              "duration": 16206007814,
+              "status": "failed",
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(),\u0027Kavanaugh Hearing\u0027)]\"}\n  (Session info: chrome\u003d69.0.3497.100)\n  (Driver info: chromedriver\u003d2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform\u003dWindows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 10.03 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00272.53.0\u0027, revision: \u002735ae25b1534ae328c771e0856c93e187490ca824\u0027, time: \u00272016-03-15 10:43:46\u0027\nSystem info: host: \u0027DEL1-DHP-27956\u0027, ip: \u0027172.16.38.26\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.7.0_79\u0027\n*** Element info: {Using\u003dxpath, value\u003d//a[contains(text(),\u0027Kavanaugh Hearing\u0027)]}\nSession ID: e6fc6def040b5f5dd565b5b2cf45098d\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{platform\u003dXP, acceptSslCerts\u003dfalse, javascriptEnabled\u003dtrue, browserName\u003dchrome, chrome\u003d{userDataDir\u003dC:\\Users\\ABHISH~1.GOY\\AppData\\Local\\Temp\\scoped_dir10204_27188, chromedriverVersion\u003d2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7)}, networkConnectionEnabled\u003dfalse, unexpectedAlertBehaviour\u003d, rotatable\u003dfalse, setWindowRect\u003dtrue, mobileEmulationEnabled\u003dfalse, locationContextEnabled\u003dtrue, pageLoadStrategy\u003dnormal, version\u003d69.0.3497.100, takesHeapSnapshot\u003dtrue, cssSelectorsEnabled\u003dtrue, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, browserConnectionEnabled\u003dfalse, webStorageEnabled\u003dtrue, nativeEvents\u003dtrue, hasTouchScreen\u003dfalse, applicationCacheEnabled\u003dfalse, takesScreenshot\u003dtrue, acceptInsecureCerts\u003dfalse}]\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:526)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)\r\n\tat cqPlus.pages.HomePage.news(HomePage.java:36)\r\n\tat com.qa.stepDefinitions.HomePageStep.click_on_moreNews(HomePageStep.java:79)\r\n\tat ✽.Then click on More link to see more news(C:/Users/abhishek.goyal2/workspace/CQPOCCucumberPOM/src/main/java/com/qa/features/cqplus.feature:9)\r\n"
             },
             "name": "click on More link to see more news",
             "keyword": "Then ",
@@ -89,8 +90,7 @@
           },
           {
             "result": {
-              "duration": 2099329303,
-              "status": "passed"
+              "status": "skipped"
             },
             "name": "Close the Browser",
             "keyword": "Then ",

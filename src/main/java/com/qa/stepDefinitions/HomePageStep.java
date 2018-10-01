@@ -32,7 +32,7 @@ public class HomePageStep extends BaseUd {
 
 		url = geturl("url");
 		driver.get(url);
-		driver.manage().window().maximize();
+		driver.manage().window().maximize();	
 	}
 
 	// User enters the login credentials and login to the application
@@ -69,22 +69,24 @@ public class HomePageStep extends BaseUd {
 		// Express the Regexp above with the code you wish you had
 		// throw new PendingException();
 		HomePage hp = new HomePage(driver);
-		Thread.sleep(3000);
-		hp.morelink().click();
-		
 		JavascriptExecutor js= (JavascriptExecutor) driver;
 		
 		Thread.sleep(3000);
-		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+		js.executeScript("arguments[0].scrollIntoView();",hp.morelink() );
+		Thread.sleep(3000);
+		hp.morelink().click();
 		
-		Thread.sleep(4000);
+	
+		
+//		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+		
+
 		}
 
 	// Browser is closed
 
 	@Then("^Close the Browser$")
 	public void Close_Browser() throws Throwable {
-	
 	
 	// Express the Regexp above with the code you wish you had
 		// throw new PendingException();
